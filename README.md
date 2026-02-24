@@ -26,6 +26,17 @@
    VPC    
    CloudFormation
 
+   4. create cluster and nodegroup
+    eksctl create cluster \
+  --name mycluster \
+  --region ap-south-1 \
+  --nodegroup-name mynodegroup \
+  --node-type t3.micro \
+  --nodes 2 \
+  --nodes-min 2 \
+  --nodes-max 2 \
+  --managed
+
 
 
 
